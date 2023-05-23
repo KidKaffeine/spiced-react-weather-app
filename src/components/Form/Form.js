@@ -15,9 +15,9 @@ export default function Form({onAddActivity}) {
 return (
 <form onSubmit={handleFormSubmit} htmlFor="form" className="form">
     <label htmlFor="activity" className="form__label">My next activity:</label>
-    <input type="text" name="activity" id="activity" className="form__input-activity"/>
+    <input type="text" name="activity" id="activity" className="form__input-activity" required/>
     <label htmlFor="checkbox" className="form__label">Good weather activity</label>
-    <input type="checkbox" name="checkbox" id="checkbox" className="form__input-checkbox" /> 
+    <input type="checkbox" name="checkbox" id="checkbox" className="form__input-checkbox"/> 
     <input type="submit" name="button "id="button" className="form__button"/>
 </form>
 
