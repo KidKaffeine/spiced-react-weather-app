@@ -1,7 +1,3 @@
-.form__input {
-    display: block;
-}
-
 .form__button {
     display: block;   
     padding: 10px;
@@ -21,8 +17,14 @@
     display: block;
     border: solid 1px #fff;
     border-radius: 4px;
+    width: 96%;
+    margin: 0;
 }
 
-input[type='checkbox'] {
-accent-color: transparent;
+.form__button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 1s;
+    border: solid 1px #000;
 }
+

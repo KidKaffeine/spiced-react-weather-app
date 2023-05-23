@@ -28,11 +28,13 @@ function App() {
 
    return ( 
           <>
+          <div className={goodWeather ? "test1" : "test"}>
           <Header weatherData={data}></Header>
           <main className="main__app">
           <RenderForm entry={activity.filter((note) => note.isChecked === goodWeather)} onDeleteButton={handleDeleteButton} />
           <Form onAddActivity={handleAddActivity}/>
           </main>
+          </div>
           </>
   )
 }
