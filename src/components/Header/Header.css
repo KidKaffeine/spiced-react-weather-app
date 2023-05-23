@@ -1,0 +1,9 @@
+.header__span {
+    display: block;
+    line-height: 2em;
+}
+
+.header__span, 
+.header {
+    text-align: center;  
+}

@@ -1,0 +1,18 @@
+.unordered__list {
+    list-style: none;
+    padding: 0;
+    line-height: 2em;;
+}
+
+.list__button {
+    background-color: #000;
+    color: #fff; 
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none; 
+} 
+
+.list__item {
+    font-size: 20px;
+}
