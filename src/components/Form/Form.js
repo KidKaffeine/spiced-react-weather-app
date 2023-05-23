@@ -1,4 +1,4 @@
-import React from "react";
+import "./Form.css"
 
 export default function Form({onAddActivity}) {
 
@@ -13,12 +13,12 @@ export default function Form({onAddActivity}) {
     }
 
 return (
-<form onSubmit={handleFormSubmit} htmlFor="form">
-    <label htmlFor="activity">Name</label>
-    <input type="text" name="activity" id="activity"/>
-    <label htmlFor="activity">Good weather activity</label>
-    <input type="checkbox" name="checkbox" id="checkbox"/> 
-    <input type="submit" name="button "id="button"/>
+<form onSubmit={handleFormSubmit} htmlFor="form" className="form">
+    <label htmlFor="activity" className="form__label">My next activity:</label>
+    <input type="text" name="activity" id="activity" className="form__input-activity"/>
+    <label htmlFor="checkbox" className="form__label">Good weather activity</label>
+    <input type="checkbox" name="checkbox" id="checkbox" className="form__input-checkbox" /> 
+    <input type="submit" name="button "id="button" className="form__button"/>
 </form>
 
 )

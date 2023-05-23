@@ -1,16 +1,15 @@
-import React from "react";
+import "./RenderForm.css"
 
-export default function RenderForm ({ entry, checkButton }) {
+export default function RenderForm ({ entry, onDeleteButton }) {
 
-    if(checkButton)
- return (
-    <ul>
-
-        {entry.map((note) => {
-            return   <li key={note.id} className={note.checkbox}> {note.activity}</li>
-        })}
-    
+ return (  
+    <>
+    <ul className="unordered__list">
+      {entry.map((note) => {
+        return  <li key={note.id} className="list__item"> <button id={note.id} onClick={() => { onDeleteButton(note.id)}} className="list__button"> x</button> {note.activity}</li>
+      })}
     </ul>
+    </>
  )
 
 }
