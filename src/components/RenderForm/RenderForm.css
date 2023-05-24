@@ -1,19 +1,24 @@
 .unordered__list {
     list-style: none;
     padding: 0;
-    line-height: 2em;
-    text-align: center;
+    width: 40%;
+}
+
+.list__item {
+    font-size: 18px;
+    border: solid 1px #fff;
+    padding: 10px 6px;
+    border-radius: 10px;
+    margin-block: 10px;
+    position: relative;
 }
 
 .list__button {
-    background-color: #000;
-    color: #fff; 
+    background-color: transparent;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: none; 
+    border: 1px solid #fff;; 
+    color: #fff;
+    margin-inline: 10px;
 } 
-
-.list__item {
-    font-size: 20px;
-}

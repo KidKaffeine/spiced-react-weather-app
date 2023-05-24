@@ -1,11 +1,14 @@
 .header__span, 
 .main__header {
-    text-align: center;  
+text-align: center;  
 }
 
 .header__span {
-    display: block;
+display: block;
 }
 
+.main__header {
+padding-top: 80px;
+}
 
 
